@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>MyProduct — Work Smarter, Grow Faster</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="progress" id="progress"></div>
+
+<header id="header" class="header">
+<nav class="nav container">
+<a class="logo" href="#hero"><span class="logo-dot"></span> MyProduct</a>
+<ul class="nav__links" id="navLinks">
+<li><a href="#features" class="nav__link">Features</a></li>
+<li><a href="#pricing" class="nav__link">Pricing</a></li>
+<li><a href="#testimonials" class="nav__link">Testimonials</a></li>
+<li><a href="#contact" class="nav__link">Contact</a></li>
+</ul>
+<div class="nav__actions">
+<button class="btn btn--ghost" id="themeToggle" aria-label="Toggle theme"><i class="fa-solid fa-moon"></i></button>
+<a href="#pricing" class="btn btn--primary magnetic" data-magnetic data-ripple>Get Started</a>
+<button class="hamburger" id="hamburger" aria-label="Open menu">
+<span></span><span></span><span></span>
+</button>
+</div>
+</nav>
+</header>
+
+<main>
+<section id="hero" class="hero container">
+<div class="hero__content" data-aos="fade-right" data-aos-delay="100">
+<h1 class="hero__title">Work smarter with <span class="gradient-text">MyProduct</span></h1>
+<p class="hero__subtitle">Automate tasks, collaborate in real‑time, and scale your business with an intuitive, secure platform.</p>
+<div class="hero__cta">
+<a href="#pricing" class="btn btn--primary magnetic" data-magnetic data-ripple>Buy Now</a>
+<a href="#features" class="btn btn--ghost" data-ripple>See Features</a>
+</div>
+<div class="hero__stats">
+<div class="stat"><span class="count" data-count="12000">0</span>+ teams</div>
+<div class="stat"><span class="count" data-count="98">0</span>% uptime</div>
+<div class="stat"><span class="count" data-count="4.9">0</span>/5 rating</div>
+</div>
+</div>
+<div class="hero__visual" data-aos="fade-left" data-aos-delay="200">
+<div class="hero__blob blob-1"></div>
+<div class="hero__blob blob-2"></div>
+<img class="hero__img" src="https://images.unsplash.com/photo-1527430253228-e93688616381?q=80&w=1600&auto=format&fit=crop" alt="Dashboard preview"/>
+</div>
+</section>
+
+<section id="features" class="section features">
+<div class="container">
+<h2 class="section__title" data-aos="fade-up">Powerful features, beautifully simple</h2>
+<div class="grid features__grid">
+<article class="card tilt" data-tilt data-aos="zoom-in">
+<div class="card__icon"><i class="fa-solid fa-bolt"></i></div>
+<h3>Blazing Performance</h3>
+<p>Optimized rendering & caching deliver instant load times and buttery‑smooth interactions.</p>
+<a href="#pricing" class="link">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+</article>
+<article class="card tilt" data-tilt data-aos="zoom-in" data-aos-delay="100">
+<div class="card__icon"><i class="fa-solid fa-shield-halved"></i></div>
+<h3>Bank‑grade Security</h3>
+<p>SSO, 2FA, role‑based access, and end‑to‑end encryption keep your data safe.</p>
+<a href="#pricing" class="link">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+</article>
+<article class="card tilt" data-tilt data-aos="zoom-in" data-aos-delay="200">
+<div class="card__icon"><i class="fa-solid fa-plug"></i></div>
+<h3>200+ Integrations</h3>
+<p>Connect Slack, Google, Jira, and more. Build custom workflows in minutes.</p>
+<a href="#pricing" class="link">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+</article>
+</div>
+</div>
+</section>
+
+<section id="pricing" class="section pricing">
+<div class="container">
+<div class="pricing__head" data-aos="fade-up">
+<h2 class="section__title">Simple, transparent pricing</h2>
+<label class="switch">
+<span class="switch__label"><strong>Monthly</strong> <em>/</em> Yearly</span>
+<input type="checkbox" id="togglePricing" />
+<span class="slider"></span>
+</label>
+</div>
+<div class="grid pricing__grid">
+<article class="price-card tilt" data-tilt data-aos="fade-up">
+<h3>Basic</h3>
+<div class="price"><span class="currency">$</span><span class="price-value" data-monthly="10" data-yearly="96">10</span><span class="period">/mo</span></div>
+<ul class="price-features">
+<li><i class="fa-solid fa-check"></i> 3 Projects</li>
+<li><i class="fa-solid fa-check"></i> Community Support</li>
+<li><i class="fa-solid fa-check"></i> Core Features</li>
+</ul>
+<a class="btn btn--outline magnetic" data-magnetic data-ripple href="#">Choose Basic</a>
+</article>
+<article class="price-card price-card--pro tilt recommended" data-tilt data-aos="fade-up" data-aos-delay="100">
+<div class="badge">Most Popular</div>
+<h3>Pro</h3>
+<div class="price"><span class="currency">$</span><span class="price-value" data-monthly="20" data-yearly="192">20</span><span class="period">/mo</span></div>
+<ul class="price-features">
+<li><i class="fa-solid fa-check"></i> Unlimited Projects</li>
+<li><i class="fa-solid fa-check"></i> Advanced Automations</li>
+<li><i class="fa-solid fa-check"></i> Priority Support</li>
+</ul>
+<a class="btn btn--primary glow magnetic" data-magnetic data-ripple href="#">Choose Pro</a>
+</article>
+<article class="price-card tilt" data-tilt data-aos="fade-up" data-aos-delay="200">
+<h3>Enterprise</h3>
+<div class="price"><span class="currency">$</span><span class="price-value" data-monthly="50" data-yearly="480">50</span><span class="period">/mo</span></div>
+<ul class="price-features">
+<li><i class="fa-solid fa-check"></i> SSO & SAML</li>
+<li><i class="fa-solid fa-check"></i> Dedicated CSM</li>
+<li><i class="fa-solid fa-check"></i> Custom SLAs</li>
+</ul>
+<a class="btn btn--outline magnetic" data-magnetic data-ripple href="#">Contact Sales</a>
+</article>
+</div>
+</div>
+</section>
+
+<section id="testimonials" class="section testimonials">
+<div class="container">
+<h2 class="section__title" data-aos="fade-up">Loved by teams worldwide</h2>
+<div class="swiper" id="testimonialSwiper" data-aos="fade-up" data-aos-delay="100">
+<div class="swiper-wrapper">
+<div class="swiper-slide">
+<div class="tcard">
+<img class="tcard__avatar" src="https://i.pravatar.cc/80?img=32" alt="Jane" />
+<p class="tcard__text">“MyProduct doubled our team's productivity. Smooth UI and powerful features.”</p>
+<h4>Jane Doe <span>• Product Manager</span></h4>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="tcard">
+<img class="tcard__avatar" src="https://i.pravatar.cc/80?img=12" alt="Ahmed" />
+<p class="tcard__text">“Setup took minutes. Support is top‑notch and integrations are seamless.”</p>
+<h4>Ahmed Khan <span>• Founder</span></h4>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="tcard">
+<img class="tcard__avatar" src="https://i.pravatar.cc/80?img=45" alt="Sarah" />
+<p class="tcard__text">“Security features impressed our auditors. Highly recommended.”</p>
+<h4>Sarah Lee <span>• CTO</span></h4>
+</div>
+</div>
+</div>
+<div class="swiper-pagination"></div>
+<div class="swiper-button-prev"></div>
+<div class="swiper-button-next"></div>
+</div>
+</div>
+</section>
+</main>
+
+<footer id="contact" class="footer">
+<div class="container footer__grid">
+<div>
+<a class="logo" href="#hero"><span class="logo-dot"></span> MyProduct</a>
+<p>© <span id="year"></span> MyProduct Inc. All rights reserved.</p>
+</div>
+<div class="footer__links">
+<a href="#features">Features</a>
+<a href="#pricing">Pricing</a>
+<a href="#testimonials">Testimonials</a>
+</div>
+<div class="footer__social">
+<a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+<a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+<a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+</div>
+</div>
+</footer>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
